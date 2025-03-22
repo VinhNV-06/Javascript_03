@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap</title>
+</head>
+<body>
+    <p style="background-color:orange; padding: 10px;font-size: 18px; text-align: center;">
+        PT Ứng dụng Web - Thiết kế form đơn giản
+    </p>
+    <form action="" method="get">
+        Họ và tên <input type="text" name="ho_ten" size="50" maxlength="30" placeholder="Nhập Họ Tên" >
+        <br><br>
+        Email <input type="email" name="email" id="email" placeholder="Nhập Email" size="50" >
+        <br><br><label for="phone" >
+            Số điện thoại:
+        </label>
+         <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Nhập số điện thoại" required />
+    </form>
+    Quê quán:<br>
+    <select name="thanh_pho" >
+        <option value="">--chọn thành phố--</option>
+        <option value="ha_noi">Hà Nội</option>
+        <option value="TP Hồ Chí Minh">Thành Phố Hồ Chí Minh</option>
+    </select>
+    <br><br>
+    <form action="" method="get">
+        Giới tính
+        <input type="radio" name="nam" value="nam" /> Nam
+        <input type="radio" name="nu" value="nu" />Nữ
+    </form>
+    <br><br>
+    Kỹ năng
+    <input type="checkbox" name="ky_nang" value="html" /> HTML 
+    <input type="checkbox" name="ky_nang" value="css" />CSS 
+    <input type="checkbox" name="ky_nang" value="jss" /> JS
+    <br><br>
+    Ngày sinh 
+    <input type="date" name="date_of_birth" id="date_of_birth" />
+    <form action="" method="get">
+        <textarea name="gioi_thieu" cols="50" rows="5" placeholder="Giới thiệu bản thân" ></textarea>
+    </form>
+    <p style="background-color: orange; padding: 10px; font-size: 18px; text-align: center;">
+    <input type="submit" name="submit" value="Submit" /> 
+    <input type="button" name="reset" value="Reset" />
+    </p>
+
+    
+</body>
+</html>

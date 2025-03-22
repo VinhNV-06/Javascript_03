@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET">
+        Họ và Tên : <input type="text" name="ho_ten" required size="100" maxlength="50" placeholder="Nhập Họ và Tên" value="Nguyễn Viết Vinh">
+    </form>
+    <form action="" method="get">
+        Mật Khẩu : <input type="text" name="mat_khau" required size="50" maxlength="50" placeholder="Nhập Mật Khẩu" value="123456@" />
+    </form>
+    <form action="" method="get">
+    <h3>Giới thiệu bản thân</h3>
+    <textarea name="gioi_thieu" cols="100" rows="4" placeholder="Bạn hãy giới thiệu sơ qua về bản thân"></textarea>
+    </form> Đáp án đúng:
+    <input type="radio" name="ket_qua" value="a" checked="checked" /> Đáp án A
+    <input type="radio" name="ket_qua" value="b" /> Đáp án B
+    <input type="radio" name="ket_qua" value="c" /> Đáp án C
+    <br><br>
+    <form action="" method="get">
+            Sở thích của bạn :
+            <input type="checkbox" name="so_thich" value="xem_phim" checked="checked" /> Xem Phim
+            <input type="checkbox" name="so_thich" value="nghe_nhac" /> Nghe Nhạc
+            <input type="checkbox" name="so_thich" value="doc_sach" /> Đọc Sách
+    </form>
+    Nơi ở của bạn :
+    <select name="thanh_pho" size="4" multiple="multiple">
+        <option value="">--Chọn Thành Phố--</option>
+        <option value="hanoi" selected>Hà Nội</option>
+        <option value="ho_chi_minh" >TP Hồ Chí Minh</option>
+        <option value="da_nang"selected>Đà Nẵng</option>
+        <option value="sa_pa" >Sa Pa</option>
+    </select>
+    <br><br>
+    File đính kèm
+    <input type="file" name="avatar" accept="image/*" /> <br/>
+    <br><br>
+    <p>Đăng kí học phần</p>
+    <input type="text" name="email" />
+    <input type="submit" name="dangky" />
+    <br><br>
+    Ngày sinh của bạn 
+    <input type="date" name="date_birth" id="date_of_birth" /> <br/>
+    <br><br>
+    <input type="text" name="email" id="email" placeholder="Email" />
+    <br><br>
+    <input type="url" name="website" id="website" /> <br/>
+    
+
+</body>
+</html>
