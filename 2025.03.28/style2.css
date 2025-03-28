@@ -1,0 +1,52 @@
+* {
+  background-color: #fff1e6;
+}
+.wrapper {
+  max-width: 1500px;
+  margin: 0px auto;
+  background-color: #ffd3b6;
+}
+.hearder {
+  color: black;
+  padding: 20px;
+}
+.main_content {
+  display: flex;
+  min-height: 500px;
+  background-color: #ffaaa5;
+}
+.content {
+  flex-basis: 70%;
+}
+.sidebar {
+  flex-basis: 30%;
+  background-color: #fff1e6;
+  border: 2px solid #ccc;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.quan_li {
+  display: flex;
+  min-height: 200px;
+}
+.left {
+  flex-basis: 50%;
+}
+.right {
+  flex-basis: 50%;
+}
+.footer {
+  background-color: #d4a5a5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black !important;
+  border: 2px solid #ccc;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+a {
+  color: black !important; /* Màu hồng đậm cho link */
+  transition: color 0.3s ease; /* Hiệu ứng mượt */
+}
