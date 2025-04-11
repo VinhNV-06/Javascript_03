@@ -1,0 +1,28 @@
+h1{
+    background-color: pink;
+}
+
+
+h2{
+    background-color: red;
+    opacity: 0.3;
+    /* opacity : làm mờ , trong suốt , nhận giá trị từ 0 -> 1  */
+}
+div{
+    background-color: rgba(0, 128,0, 0.3);
+}
+/* bắt đầu vơi thuộc tính background-image */
+.image{
+    width: 600px;
+    height: 800px;
+    background-image: url(background.jpg);
+    color: red;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+/* thuộc tính background-repeat : 
+repeat-x lặp lại theo chiều ngang
+repeat-y: Chỉ cho phép lặp theo chiều dọc
+no-repeat: Chỉ xuất hiện duy nhất 1 lần */
+/* background-position: top; : vị trí của background  */
+/* kết thúc thuộc tính background-image */

@@ -1,0 +1,48 @@
+div {
+  font-family: "Dancing Script", "Roboto";
+  font-size: 40px;
+}
+.d1 {
+  color: red;
+  text-align: left;
+  /* thuộc tính text-align : vị trí của dòng text center , right , left ,... */
+}
+.d2 {
+  text-align: right;
+}
+.d3 {
+  text-align: center;
+}
+.d4 {
+  text-align: justify;
+  /* căn đều 2 lề , ví dụ ta cần tách nhiều item ra một khoảng nhưng nằm trên 1 dòng , ví dụ là cách 1 khoảng bằng 20px thì 2 item đầu và cuối sẽ cách lề 20px , những item nằm bên trong sẽ cách nhau 1 khoảng 40px*/
+}
+.a1{
+    text-decoration: underline solid red;
+}
+.a2{
+    text-decoration: overline double pink;
+}
+.a3{
+    text-decoration: line-through dotted aqua;
+}
+li{
+    list-style-type: none;
+    
+}
+.fa-brands{
+  color: aqua;
+  margin-right: 20px;
+}
+.fa-solid{
+  margin-right: 20px;
+}
+.fa-facebook {
+  color: pink;
+}
+.fa-house{
+  color: aqua;
+}
+.fa-image{
+  color: blueviolet;
+}
