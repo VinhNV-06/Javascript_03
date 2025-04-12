@@ -1,0 +1,78 @@
+.mien_bac {
+    color: blue;
+}
+.mien_trung{
+    color: red;
+
+}
+.big_city{
+    font-size: 3rem;
+}
+#thu_do {
+    font-size: 4rem;
+}
+/* kết thúc phần selector đơn giản */
+/* selector phức tạp */
+.ong > p{
+    font-size: 2rem;
+    color: aqua;
+} 
+/* tất cả thẻ p là con trực tiếp của class ong thì có màu aqua */
+.ong p {
+    background-color: yellow;
+}
+/* tất cả thẻ p là con , bên trong class ong thì có background-color màu vàng */
+.ong+p{
+    color: red;
+}
+/* tất cả thẻ p là anh em liền kề , ngay đằng sau class ong thì text có màu đỏ */
+i ~ p {
+    color: pink;
+
+}
+/* tất cả thẻ p là anh em đằng sau thẻ i thì có màu hồng */
+a:hover{
+    color: red;
+}
+/* lớp giả hover khi để di chuột vào link thì có màu đỏ */
+a:active{
+    color: green;
+}
+/* khi giữ chuột ở link thì có màu xanh */
+a:link{
+    color: brown;
+}
+/* khi chưa nhấp vào link thì có màu nâu */
+a:checked{
+    color: aqua;
+}
+/* khi đã nhấp chuột vào link rồi thì có màu aqua */
+/* bắt đầu bộ trọn phần tử giả */
+.phan_tu_gia::first-letter{
+    color: red;
+    font-size: 40px;
+
+}
+/* firt-letter cho phép chọn chữ cái đầu tiên trong phần tử được chọn */
+#firt-line::first-line{
+    color: pink;
+}
+/* firt-line : cho phép thay đổi dòng đầu tiên của phần tử được chỉ định */
+.befor::before{
+    content: "Xin chào,";
+}
+/* before dùng để chèn thêm 1 nội dung vào trước phần tử chỉ định */
+.befor::after{
+    content: 'tôi là sinh viên ngành UDU';
+}
+/* after dùng để chèn thê, 1 nội dung vào sau phần tử được chỉ định  */
+/* kết thúc bộ chọn phần tử giả  */
+a[target="_blank"]{
+    color: yellow;
+}
+input[value~="hello"] {
+    color: red;
+}
+p[class^="fita"] {
+    color: green;
+}

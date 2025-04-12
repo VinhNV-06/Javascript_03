@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>themCSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mien_bac">
+      <ul>
+        <li id="thu_do" class="big_city">Hà nội</li>
+        <li>Hải phòng</li>
+        <li>Hưng yên</li>
+      </ul>
+    </div>
+    <div class="mien_trung">
+      <ul>
+        <li class="big_city">TP Hồ Chí Minh</li>
+        <li class="Tây nguyên">Đắc Lắc</li>
+        <li>Con tum</li>
+      </ul>
+    </div>
+    <!-- kết thúc phần class id đơn giản -->
+    <!-- phần selector phức tạp -->
+    <div class="ong">
+      <p>con3</p>
+      <div class="con1"><p>con1</p></div>
+      <div class="con2">
+        <p>con2</p>
+        <div class="chau"><p>cháu</p></div>
+      </div>
+    </div>
+    <p>Sinh viên UDU xin chào</p>
+    <i>Xin chào Ptit!</i>
+    <p>sinh viên năm nhất</p>
+    <h1>hello world</h1>
+    <a href="" target="_blank">this is link</a>
+    <!-- bắt đầu phần bộ chọn phần tử giả  -->
+    <div class="phan_tu_gia">
+      <p>chỉ có chữ c đầu tiên của dòng này có fontsize là 40px và có màu đỏ</p>
+      <p id="firt-line">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eos autem
+        nemo a veritatis aspernatur qui. Tempora laudantium, possimus vero,
+        fugiat cupiditate pariatur dicta eveniet nemo eaque explicabo amet
+        reprehenderit.
+      </p>
+      <p class="befor">tôi là Vinh</p>
+    </div>
+    <!-- kết thúc bộ chọn phần tử giả  -->
+     <div class="bo_chon_thuoc_tinh">
+        <!-- bắt đầu bộ chọn thuộc tính -->
+         <!-- được dùng để chọn tới phần tử có thuộc tính được chỉ định -->
+          <a href="" target="_blank">Đây là link , chọn tới thẻ a có thuộc tính blank sẽ đổi text sang màu vàng</a>
+          <a href="">đây là thẻ a không có thuộc tính target_blank</a>
+          <input type="text" value="hello" > Thẻ inphut có value=hello sẽ chuyển sang màu đỏ
+          <p class="fita">dòng này sẽ chuyển sang màu xanh</p>
+          <p class="fita_code">dòng này chuyển sang màu xanh</p>
+          <p class="code_fita">dòng này không đổi màu</p>
+     </div>
+     <!-- kết thúc bộ chọn thuộc tính -->
+  </body>
+</html>
