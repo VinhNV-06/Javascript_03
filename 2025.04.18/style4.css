@@ -1,0 +1,20 @@
+p {
+  display: block;
+  background-color: red;
+}
+/* the display : bock dung de hien thi 1 phan tu doc lap tren 1 dong,chiem toan bo chieu dai , chieu rong co san */
+.inline p {
+  display: inline;
+  background-color: pink;
+}
+/* the display : inline , cac phan tu se xuat hienj tren cung mot dong , khong chinh sua duoc cac thuoc tinh height,padding... , xuong dong khi vuot qua do rong */
+.inline-lock p {
+    display: inline-block;
+    background-color: purple;
+}
+/* the display : inline-block : cac phan tu se xuat hien tren cung mot dong tuy nhien co the ap dung duoc cac thuoc tinh height , padding ,...*/
+.display-none p {
+    display: none;
+
+}
+/* the display : none , giup an mot phan tu tren trang web , tuy nhien tren code van con luu tru  */
