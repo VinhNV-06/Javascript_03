@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuộc tính overflow</title>
+  </head>
+  <style>
+    div.box1{
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        overflow: scroll;
+        /* scroll : xuất hiện thanh cuộn khi nội dung quá dài , tràn box chứa */
+    }
+    div.box2{
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        /* Nội dung nào tràn ra ngoài box chứa sẽ bị ẩn đi , không xuất hiện trên màn hình */
+    }
+    div.box3{
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        overflow: auto;
+        /* nếu thừa nội dung sẽ hiện thanh cuốn , không thừa nội dung sẽ không xuất hiện */
+    }
+    div.box4{
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        overflow: clip;
+        /* cắt nội dung bị tràn và người dùng không thể truy cập với phần bị thừa */
+
+    }
+    div.box5{
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        overflow: visible;
+        /* trùng với mặc định , vẫn sẽ hiện nội dung kể cả bị thừa */
+    }
+  </style>
+  <body>
+    <h1>Thuộc tính overflow</h1>
+    <p>
+      Được dùng khi một phần tử chứa nội dung quá lớn , vượt qua khỏi box chứa
+    </p>
+    <h2>overflow: scroll:</h2>
+    <div class="box1">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor dolore
+        tempore aliquid voluptas? Repellat quaerat deleniti veritatis suscipit,
+        laboriosam omnis similique fugiat praesentium inventore assumenda
+        numquam, corporis, aut dignissimos. Distinctio? Autem sed id illum
+        quidem, quibusdam, accusamus est ipsum fugiat ullam optio hic. Neque
+        earum cupiditate modi, dolore et, saepe deleniti non animi dolorum
+        quaerat nesciunt quia voluptas exercitationem repellat! Asperiores,
+        labore minima molestias doloremque ipsam facilis, ab ullam saepe
+        obcaecati quod assumenda a impedit vero vitae consectetur quo. Natus,
+        quod aperiam voluptate eaque corporis debitis nulla recusandae repellat
+        facere? Minus error vel illo, voluptatum soluta minima. Hic possimus
+        voluptatum saepe ut odit quasi laboriosam, ipsam nulla quod at eaque
+        fugit voluptate libero ad, deleniti tempora aperiam doloribus. Quia,
+        totam? Harum placeat perspiciatis excepturi. Culpa autem earum deleniti
+        non officia amet doloribus exercitationem nemo ipsam ea itaque
+        laudantium, molestiae ipsa illum unde illo quidem sequi aperiam tempora
+        modi architecto blanditiis.
+      </p>
+    </div>
+    <div class="box2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+        temporibus rerum et exercitationem quo optio qui quidem maxime natus
+        consequatur, ad doloribus consectetur facilis tempora. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Sed, perspiciatis consequatur?
+        Delectus ex cumque saepe, et repellendus corrupti qui sit asperiores
+        ipsa nisi. Odio, maiores!
+      </p>
+    </div>
+    <div class="box3">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, repellendus
+        repudiandae mollitia atque odit placeat reiciendis eum enim excepturi.
+        Eveniet nobis veritatis reprehenderit sunt officia exercitationem
+        inventore, minima debitis accusamus. Temporibus, magnam repellendus odit
+        distinctio deserunt dolorem neque ipsa ratione quaerat mollitia.
+        Accusamus vitae totam, consectetur nam rerum modi praesentium odio
+        culpa! Vero, illo odit. Non et ad autem a? Molestiae, ratione officiis
+        repudiandae facilis sed quo modi alias. Quasi ut sunt quibusdam quis
+        perferendis ipsa dolor voluptatibus cumque, velit consectetur libero
+        tenetur praesentium reprehenderit nulla. Sint nulla modi blanditiis.
+        Tenetur libero ut explicabo enim blanditiis illum, sunt fugiat ratione
+        Tenetur libero ut explicabo enim blanditiis illum, sunt fugiat ratione
+        quasi culpa corrupti optio? Odio magni, aspernatur autem corrupti non
+        quo dolore facere, quibusdam voluptatem adipisci laboriosam debitis
+        saepe similique! Magni sunt architecto necessitatibus recusandae,
+        mollitia pariatur in iusto, sint, eius nostrum quod? Voluptas quibusdam
+        sed beatae minima magnam nam delectus eius earum optio, aspernatur, eos
+        nesciunt esse. Cupiditate, explicabo.
+      </p>
+    </div>
+        <div class="box4">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, repellendus
+        repudiandae mollitia atque odit placeat reiciendis eum enim excepturi.
+        Eveniet nobis veritatis reprehenderit sunt officia exercitationem
+        inventore, minima debitis accusamus. Temporibus, magnam repellendus odit
+        distinctio deserunt dolorem neque ipsa ratione quaerat mollitia.
+        Accusamus vitae totam, consectetur nam rerum modi praesentium odio
+        culpa! Vero, illo odit. Non et ad autem a? Molestiae, ratione officiis
+        repudiandae facilis sed quo modi alias. Quasi ut sunt quibusdam quis
+        perferendis ipsa dolor voluptatibus cumque, velit consectetur libero
+        tenetur praesentium reprehenderit nulla. Sint nulla modi blanditiis.
+        Tenetur libero ut explicabo enim blanditiis illum, sunt fugiat ratione
+        Tenetur libero ut explicabo enim blanditiis illum, sunt fugiat ratione
+        quasi culpa corrupti optio? Odio magni, aspernatur autem corrupti non
+        quo dolore facere, quibusdam voluptatem adipisci laboriosam debitis
+        saepe similique! Magni sunt architecto necessitatibus recusandae,
+        mollitia pariatur in iusto, sint, eius nostrum quod? Voluptas quibusdam
+        sed beatae minima magnam nam delectus eius earum optio, aspernatur, eos
+        nesciunt esse. Cupiditate, explicabo.
+      </p>
+    </div>
+        <div class="box5">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, repellendus
+        repudiandae mollitia atque odit placeat reiciendis eum enim excepturi.
+        Eveniet nobis veritatis reprehenderit sunt officia exercitationem
+        inventore, minima debitis accusamus. Temporibus, magnam repellendus odit
+        distinctio deserunt dolorem neque ipsa ratione quaerat mollitia.
+        Accusamus vitae totam, consectetur nam rerum modi praesentium odio
+        culpa! Vero, illo odit. Non et ad autem a? Molestiae, ratione officiis
+        repudiandae facilis sed quo modi alias. Quasi ut sunt quibusdam quis
+        perferendis ipsa dolor voluptatibus cumque, velit consectetur libero
+        tenetur praesentium reprehenderit nulla. Sint nulla modi blanditiis.
+        Tenetur libero ut explicabo enim blanditiis illum, sunt fugiat ratione
+        Tenetur libero ut explicabo enim blanditiis illum, sunt fugiat ratione
+        quasi culpa corrupti optio? Odio magni, aspernatur autem corrupti non
+        quo dolore facere, quibusdam voluptatem adipisci laboriosam debitis
+        saepe similique! Magni sunt architecto necessitatibus recusandae,
+        mollitia pariatur in iusto, sint, eius nostrum quod? Voluptas quibusdam
+        sed beatae minima magnam nam delectus eius earum optio, aspernatur, eos
+        nesciunt esse. Cupiditate, explicabo.
+      </p>
+    </div>
+    
+  </body>
+</html>

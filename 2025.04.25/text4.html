@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1000px;
+        height: 1000px;
+        background-color: blueviolet;
+        display: flex;
+        /* thiết lập container */
+        flex-direction: row;
+        /* sắp xếp các box theo chiều dọc */
+        /* flex-direction: row; */
+        /* sắp xếp các box theo chiều ngang */
+        /* flex-direction: column-reverse; */
+        /* sắp xếp các box theo chiều dọc theo hướng ngược lại  */
+        /* flex-direction: row-reverse; */
+        /* sắp xếp theo chiều nganh theo hướng ngược lại */
+        /* flex-wrap: nowrap; */
+        /* dùng để thiết lập khi xuống dòng , ví dụ dài quá thì sẽ tự động xuống dòng 
+        có các giá trị khác : wrap , wrap-resever*/
+        /* align-content: space-between; */
+        /* thuộc tính align content hoạt động vuông góc với trục chính , ví dụ flex-direction : row thì algin content tác dụng theo trục colum */
+
+        /* CÁc item được phân bố đồng đều */
+        /* giúp phân phối khoảng trồng giữa các item theo trục y cross axis */
+        /* align-content: space-around; */
+        /* sapce around : khoảng cách xung quanh mỗi dòng được chia đều có khoảng trống phía trên và phía dưới dòng */
+
+        /* align-content: flex-start; */
+        /* các cái itiem sẽ được đặt ở đầu container  */
+        /* align-content: flex-end ; */
+        /* các cái itiem sẽ được đặt ở cuối container  */
+        /* align-content: stretch; */
+        /* các item sẽ dãn ra để lấp đầy khoảng trống giữa các item , đây là trạng thái mặc định */
+        /* align-content: center; */
+        /* các item nằm ở giứa container */
+        align-content: baseline;
+        /* các item được căn chỉnh trên đường cớ sở của chúng */
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+      }
+
+      .box1 {
+        background-color: aquamarine;
+        height: 300px;
+      }
+
+      .box2 {
+        background-color: blue;
+      }
+
+      .box3 {
+        background-color: chartreuse;
+        height: 150px;
+      }
+      .box4 {
+        background-color: #fff;
+      }
+      .box5 {
+        background-color: pink;
+        height: 150px;
+      }
+      .box6 {
+        background-color: red;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <h1>Box 1</h1>
+      </div>
+      <div class="box box2">
+        <p>Box 2</p>
+      </div>
+      <div class="box box3">
+        <h2>Box 3</h2>
+      </div>
+      <div class="box box4">
+        <h2>Box 4</h2>
+      </div>
+      <div class="box box5">
+        <h2>Box 5</h2>
+      </div>
+      <div class="box box6">
+        <h2>Box 6</h2>
+      </div>
+    </div>
+    <div class="img">
+      <img
+        src="https://zentbk.gitbook.io/~gitbook/image?url=https%3A%2F%2Fcontent.gitbook.com%2Fcontent%2FXWBADVgk4cgEBsWg0ius%2Fblobs%2F9emDvomeiJvKZvT78ewk%2Fflex5.png&width=768&dpr=1&quality=100&sign=e33666ce&sv=2"
+        alt="Ảnh miêu tả algin - content"
+      />
+    </div>
+  </body>
+</html>
