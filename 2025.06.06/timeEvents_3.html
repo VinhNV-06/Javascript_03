@@ -1,0 +1,24 @@
+<!-- Hàm này cũng có chức năng là thực hiện hành động sau khoản thời gian bao nhiêu giây, nhưng nó sẽ thực hiện lại nhiều lần như một vòng lặp, cứ sau mỗi khoảng thởi gian mà chúng ta xác định nó sẽ lại thực hiện lại. -->
+<!-- có thể dùng hàm này để làm đồng hồ chạy tự động , bộ đếm thời gian trong giờ làm bài kiểm tra -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>UDU</title>
+  </head>
+  <body>
+    <!-- giá trị đầu tiên hiện trên màn hình  -->
+    <p id="result">0</p>  
+    <script type="text/javascript">
+      var result = document.getElementById("result");
+      var i = 1;
+    //   hàm + thêm 1 giây , giới hạn đến 1000
+    // hàm setInterval
+      setInterval(function () {
+        result.innerText = i;
+        i++;
+      }, 1000);
+    </script>
+  </body>
+</html>

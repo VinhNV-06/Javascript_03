@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <input type="text" name="user_name" id="name" placeholder="User Name" required>
+    <input type="password" name="password" id="password" placeholder="password" required>
+    <button onclick="login()">Login</button>
+    <script>
+        // kiểm tra nếu đã đăng nhập , chuyển hướng đến trang admin
+        if(localStorage.getItem("islogined")) {
+            window.location.href = 'admin.html';
+        }
+        function login() {
+            const user_name = document.getElementById("name").value ;
+            const password  = document.getElementById("password").value;
+
+            // Kiểm tra thông tin đăng nhập (giả sử username: admin, password: 123456) 
+            if (user_name === 'admin' && password === '1234567') {
+                localStorage.setItem("islogined", "true") ;
+                window.location.href = 'admin.html';
+            }
+            else {
+                document.write("Đăng nhập sai")
+            }
+
+        }
+        localStorage.clear();
+
+    </script>
+    
+</body>
+</html>

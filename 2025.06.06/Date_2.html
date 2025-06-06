@@ -1,0 +1,46 @@
+<!-- 
+getDate() trả về ngày trong tháng (1 - 31).
+
+getDay() trả về ngày trong tuần (0-6), với chủ nhật là 0, thứ 2 là 1, thứ 3 là 2 ,...
+
+getMonth() trả về tháng trong năm (0 - 11).
+
+getFullYear() trả về năm dạng đầy đủ (YYYY).
+
+getHours() trả về số giờ dạng 24h (0 - 23).
+
+getMinutes() trả về phút trong giờ (0 - 59).
+
+getSeconds() trả về số giây trong phút (0 - 59).
+
+getMilliSeconds() trả về tích tắc trong giây (0 - 999).
+
+getTime() Trả về thời gian dạng mili giây. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đối tượng date trong javascript</title>
+  </head>
+  <body>
+    <div>Click vào button để lấy kết quả</div>
+    <button type="button" onclick="get()">Click</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+      function get() {
+        var date = new Date();
+        var data = "Ngày trong tháng : " + date.getDate() + "<br />";
+        data += "Ngày trong tuần : " + date.getDay() + "<br />";
+        data += "Tháng trong năm : " + date.getMonth() + "<br />";
+        data += "Năm đầy đủ : " + date.getFullYear() + "<br />";
+        data += "Giờ : " + date.getHours() + "<br />";
+        data += "Phút : " + date.getMinutes() + "<br />";
+        data += "Giây : " + date.getSeconds() + "<br />";
+        data += "Mili Giây : " + date.getMilliseconds() + "<br />";
+        data += "Time dạng mili giây : " + date.getTime() + "<br />";
+        document.getElementById("result").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>

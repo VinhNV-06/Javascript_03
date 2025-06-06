@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Khởi tạo ngày và giờ hiện tại
+      var date = new Date();
+      console.log(date);
+      // khởi tạo ngày và giờ hiện tại theo cách khác
+      var date_2 = new Date(10000000000000);
+      document.write(date);
+      // khởi tạo ngày và giờ từ một dateString
+      document.write("<br>");
+      var date_3 = new Date("April 06, 2017 12:00:00");
+      document.write(date_3);
+      // khởi tạo ngày và giờ từ dateString dạng attribute
+      document.write("<br><br>");
+      var date_4 = new Date(2017, 04, 06, 12, 08, 05, 150);
+      document.write(date_4);
+    </script>
+  </body>
+</html>
